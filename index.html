@@ -372,25 +372,70 @@
                     </li>
                 </ul>
             </div>
+            <div>
+                <p class="footer-join__title">Підпишіться на розсилку</p>
+                <form class="footer__mail js-speaker-join" >
+                    <input class="footer__mail_style" type="email" name="email" id="email" placeholder="E-mail">
+                    <button class="footer-mail__btn" type="submit" >
+                        Підписатися
+                        <svg class="icon icon-send">
+                            <use href="./images/sprite-icon.svg#send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     
         <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
             <button class="modal__close" type="button" tabindex="1" data-modal-close>
                 <svg class="icon">
                     <use href="./images/sprite-icon.svg#close"></use>
                 </svg>
             </button>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo recusandae obcaecati, odio expedita officia ipsa qui accusantium possimus doloribus, quas rem quibusdam est molestiae, dolor dolore provident doloremque soluta optio.
-                Maiores corrupti consectetur nisi voluptas culpa dicta error recusandae omnis laborum molestias natus consequuntur possimus sequi eos impedit odio laboriosam blanditiis eligendi, odit et quod nam quia? Fugiat, temporibus. Minima.
-            </p>
+            <form class="modal-form js-speaker-form">
+                <div class="modal-field">
+                    <label for="name" class="modal__lable">Ім'я</label>
+                    <input  class="modal__input" type="text" name="name" id="name">
+                    <svg class="icon modal__icon">
+                        <use href="./images/sprite-icon.svg#person"></use>
+                    </svg>
+                </div>
+                <div class="modal-field">
+                    <label for="tel" class="modal__lable">Телефон</label>
+                    <input class="modal__input" type="tel" name="tel" id="tel">
+                    <svg class="icon modal__icon">
+                        <use href="./images/sprite-icon.svg#phone"></use>
+                    </svg>
+                </div>
+                <div class="modal-field">
+                    <label for="email" class="modal__lable">Пошта</label>
+                    <input class="modal__input modal__private" type="email" name="email" id="email">
+                    <svg class="icon modal__icon">
+                        <use href="./images/sprite-icon.svg#email"></use>
+                    </svg>
+                </div>
+                <div class="modal-field">
+                    <label for="commit" class="modal__lable">Коментар</label>
+                    <textarea class="modal__commit" name="commit" id="commit" placeholder="Введіть текст"></textarea>
+                </div>
+                 <div class="modal-checkbox">
+                    <label for="kontrakt" class="modal-checkbox_value">
+                        <input class="modal-checkbox_view" type="checkbox" name="kontrakt" id="kontrakt"> 
+                        <p >Погоджуюся з розсилкою та приймаю</p>
+                        <a href="#" class="modal-checkbox__link">Умови договору</a>
+                    </label>
+                 </div>
+                <button class="modal-btn" type="submit" data-modal-submit>Відправити</button>
+            </form>
         </div>
     </div>
     
 <script src="./js/modal.js"></script>
+<script src="./js/form-speaker.js"></script>
     
 </body>
 </html>

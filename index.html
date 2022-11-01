@@ -423,8 +423,11 @@
                     <textarea class="modal__commit" name="commit" id="commit" placeholder="Введіть текст"></textarea>
                 </div>
                  <div class="modal-checkbox">
-                    <label for="kontrakt" class="modal-checkbox_value">
-                        <input class="modal-checkbox_view" type="checkbox" name="kontrakt" id="kontrakt"> 
+                    <label class="modal-checkbox_value" for="kontrakt">
+                        <input class="modal-checkbox_hide visually-hidden" type="checkbox" name="kontrakt" id="kontrakt">
+                        <svg class="icon modal-checkbox_view">
+                            <use href="./images/sprite-icon.svg#check"></use>
+                        </svg>
                         <p >Погоджуюся з розсилкою та приймаю</p>
                         <a href="#" class="modal-checkbox__link">Умови договору</a>
                     </label>

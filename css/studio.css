@@ -352,6 +352,7 @@
 
 .modal__commit {
     height: 120px;
+    resize: none;
     font-size: 16px;
     color: var(--title);
     padding: 12px 16px;
